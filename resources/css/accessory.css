@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*＝＝＝＝＝＝＝＝＝＝ヘッダーボタン＝＝＝＝＝＝＝＝＝＝*/
+.button14 a {
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 24px;
+  padding: 5px;
+  width: 130px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-image: linear-gradient(0deg, #EB973B, #D1AC6B);
+  border-radius: 50vh;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+.button14 a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(-180deg, #EB973B, #D1AC6B);
+}
+@media(min-width: 1040px) {
+  .button14 a {
+    margin: 20px 200px;
+    font-size: 1.6rem;
+    padding: 10px;
+    width: 200px;
+  }
+}
+/*＝＝＝＝＝＝＝＝＝＝サブタイトル疑似要素＝＝＝＝＝＝＝＝＝＝*/
+.section-trial__subtitle {
+  position: relative;
+}
+.section-trial__subtitle::before {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#fff;
+   position:absolute;
+   top:0px;
+   left:-12px;
+   transform: rotate(-30deg);
+}
+.section-trial__subtitle::after {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#fff;
+   position:absolute;
+   top:0px;
+   right:-12px;
+   transform: rotate(30deg);
+}
+@media(max-width: 768px) {
+  .section-trial__subtitle::before {
+    width: 2px;
+    height: 16px;
+  }
+  .section-trial__subtitle::after {
+    width: 2px;
+    height: 16px;
+  }
+}
+.section-cultivation__subtitle {
+  position: relative;
+}
+.section-cultivation__subtitle::before {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   left:-12px;
+   transform: rotate(-30deg);
+}
+.section-cultivation__subtitle::after {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   right:-12px;
+   transform: rotate(30deg);
+}
+@media(max-width: 768px) {
+  .section-cultivation__subtitle::before  {
+    width: 2px;
+    height: 16px;
+  }
+  .section-cultivation__subtitle::after {
+    width: 2px;
+    height: 16px;
+  }
+}
+.section-famer__subtitle {
+  position: relative;
+}
+.section-famer__subtitle::before {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   left:-12px;
+   transform: rotate(-30deg);
+}
+.section-famer__subtitle::after {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   right:-12px;
+   transform: rotate(30deg);
+}
+@media(max-width: 768px) {
+  .section-famer__subtitle::before  {
+    width: 2px;
+    height: 16px;
+  }
+  .section-famer__subtitle::after {
+    width: 2px;
+    height: 16px;
+  }
+}
+.customer-voice__subtitle {
+  position: relative;
+}
+.customer-voice__subtitle::before {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   left:-12px;
+   transform: rotate(-30deg);
+}
+.customer-voice__subtitle::after {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#333;
+   position:absolute;
+   top:0px;
+   right:-12px;
+   transform: rotate(30deg);
+}
+@media(max-width: 768px) {
+  .customer-voice__subtitle::before  {
+    width: 2px;
+    height: 16px;
+  }
+  .customer-voice__subtitle::after {
+    width: 2px;
+    height: 16px;
+  }
+}
+.section-quality__subtitle {
+  position: relative;
+}
+.section-quality__subtitle::before {
+   content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#f29438;
+   position:absolute;
+   top:0px;
+   left:-12px;
+   transform: rotate(-30deg);
+}
+.section-quality__subtitle::after {
+  content:"";
+   display:inline-block;
+   width:4px;
+   height:24px;
+   background-color:#f29438;
+   position:absolute;
+   right:-12px;
+   transform: rotate(30deg);
+}
+@media(max-width: 768px) {
+  .section-quality__subtitle::before  {
+    width: 2px;
+    height: 16px;
+  }
+  .section-quality__subtitle::after {
+    width: 2px;
+    height: 16px;
+    bottom: 0px;
+  }
+}
+
+/*＝＝＝＝＝＝＝＝＝＝トライアルボタン＝＝＝＝＝＝＝＝＝＝*/
+.button02 {
+  text-align: center;
+}
+.button02 a {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-left: 60px;
+  width: 267px;
+  color: #fff;
+  font-weight: 600;
+  background-image: linear-gradient(0deg, #EB973B, #D1AC6B);
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.6rem;
+}
+.button02 a span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+.button02 a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(0deg, #D1AC6B, #EB973B);
+  color: #fff;
+}
+@media(min-width: 1040px) {
+  .button02 {
+  text-align: center;
+}
+.button02 a {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 150px auto;
+  padding-left: 88px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  width: 392px;
+  color: #fff;
+  font-weight: 600;
+  background-image: linear-gradient(0deg, #EB973B, #D1AC6B);
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 2.4rem;
+}
+.button02 a span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.button02 a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(0deg, #D1AC6B, #EB973B);
+  color: #fff;
+}
+}
+/*＝＝＝＝＝＝＝＝＝＝スクロールアイコン＝＝＝＝＝＝＝＝＝＝*/
+.scrolldown2 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  top: 70%;
+  left: 80%;
+}
+@media(min-width: 1040px) {
+  .scrolldown2 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  top: 95%;
+  left: 85%;
+}
+}
+/*Scrollテキストの描写*/
+.scrolldown2 span {
+  /*描画位置*/
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  /*テキストの形状*/
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+/* 丸の描写 */
+.scrolldown2:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  /*丸の形状*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #eee;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation:
+    circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
+}
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 線の描写 */
+.scrolldown2:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線の形状*/
+  width: 2px;
+  height: 50px;
+  background: #eee;
+}
+/*＝＝＝＝＝＝＝＝＝＝トライアル背景＝＝＝＝＝＝＝＝＝＝*/
+.section-trial {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  background: #1C3C2D;
+}
+@media(min-width: 1040px) {
+  .section-trial {
+    margin-bottom: 150px;
+  }
+}
+.section-trial:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -50vw;
+  border-style: solid;
+  border-color: #EBE8E3 transparent transparent;
+  border-width: 3vw 50vw 0;
+}
+.section-trial:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -50vw;
+  border-style: solid;
+  border-color: transparent #EBE8E3;
+  border-width: 3vw 50vw 0;
+}

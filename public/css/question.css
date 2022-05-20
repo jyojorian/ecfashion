@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+/*==================================================
+アコーディオンのためのcss
+===================================*/
+/*アコーディオン全体*/
+.accordion-area {
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.accordion-area li {
+  margin: 10px 0;
+}
+.accordion-area section {
+  border: 1px solid #ccc;
+}
+/*アコーディオンタイトル*/
+.title {
+  position: relative; /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+  background: #fff;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: #333;
+}
+@media(min-width:1040px) {
+  .title {
+    margin: 0;
+    color: #333;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}
+/*アイコンの＋と×*/
+.title::before, .title::after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+}
+.title::before {
+  top: 48%;
+  left: 15px;
+  transform: rotate(0deg);
+}
+.title::after {
+  top: 48%;
+  left: 15px;
+  transform: rotate(90deg);
+}
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before {
+  transform: rotate(45deg);
+}
+.title.close::after {
+  transform: rotate(-45deg);
+}
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none; /*はじめは非表示*/
+  background: #fff;
+  margin-bottom: 50px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 3%;
+}
+.box p {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #333;
+}
+@media(min-width:1040px) {
+  .box {
+    margin: 0 0 50px 0;
+    padding: 0 5% 3%;
+  }
+  .box p {
+    font-size: 1.6rem;
+    text-align: 2.4rem;
+    color: #333;
+  }
+  .title::before, .title::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+}
+}
